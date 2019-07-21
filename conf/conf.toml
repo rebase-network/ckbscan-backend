@@ -1,0 +1,9 @@
+[Log]
+log_level = "debug" # info/debug/warn/error
+file_path = "/tmp/ckb/ckb_backend.log"
+
+[PostgreSQL]
+host = "127.0.0.1:5432"
+db_name = "ckbscan"
+username = "ckbscan"
+password = "ckbscan123"
