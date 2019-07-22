@@ -4,6 +4,7 @@ import (
 	"ckbscan-backend/conf"
 	"ckbscan-backend/log"
 	"ckbscan-backend/rest/block"
+	"ckbscan-backend/rest/address"
 	"github.com/gin-gonic/gin"
 	"os"
 	"os/signal"
@@ -30,6 +31,7 @@ func startHttpSrv() {
 	g.Use(gin.Recovery())
 
 	g.GET("/api/getblock", rest.GetBlock)
+	g.GET("/api/getaddress", address.GetAddress)
 
 	g.Run()
 }
